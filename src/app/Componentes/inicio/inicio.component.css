@@ -1,0 +1,30 @@
+[nz-carousel-content] {
+    text-align: center;
+    height: 160px;
+    line-height: 100px;
+    background: #c6a700;
+    color: #ffe54c;
+    overflow: hidden;
+    align-content: center;
+    margin-top: 0%;
+  }
+  #Lib{
+    padding-left: 10%;
+    width: 90%;
+    height: 90%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+#Man{
+  padding-left: 13%;
+  width: 87%;
+  height: 87%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+#Com{
+  width: 110%;
+  height: 110%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}

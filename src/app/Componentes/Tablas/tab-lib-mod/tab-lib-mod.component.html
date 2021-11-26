@@ -1,0 +1,18 @@
+<h1>Libros de moda</h1>
+<nz-table #basicTable [nzData]="listOfData">
+    <thead>
+      <tr>
+        <th class="Cabeza">Nombre del libro</th>
+        <th class="Cabeza"> Autor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of basicTable.data">
+        <td class="Cat">{{ data.book }}</td>
+        <td class="Cat">Creado por {{ data.autor }}</td>
+        <td class="Cat">
+          <a>Visitar</a>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>

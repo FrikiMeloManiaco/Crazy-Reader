@@ -1,0 +1,21 @@
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: purple;
+}
+.Cat{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #cfcfcf;
+    border-color:#c66900 ;
+}
+.Cabeza{
+    background-color: #fdd835;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nz-table{
+    background-color: #707070;
+}
+h1{
+    color:#fdd835;
+    background-color:#707070 ;
+}

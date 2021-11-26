@@ -1,0 +1,20 @@
+<h1>Categorias mas populares</h1>
+<nz-table #basicTable [nzData]="listOfData">
+    <thead>
+      <tr>
+        <th class="Cabeza">Categoria</th>
+        <th class="Cabeza">Popularidad</th>
+        <th class="Cabeza"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of basicTable.data">
+        <td class="Cat">{{ data.name }}</td>
+        <td class="Cat">{{ data.int }}</td>
+        <td class="Cat">Al {{ data.int }} le gusta este genero</td>
+        <td class="Cat">
+          <a>Visitar</a>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style ></style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="top">
+    <h1>Libros</h1>
+    </div>
+    <h2>Mas populares</h2>
+
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <a href="https://elearning.utng.edu.mx/">
+                <img src="https://edit.org/images/cat/portadas-libros-big-2019101610.jpg" height="100" width="250" alt="">
+                </a>
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/visa-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/maestro-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/maestro-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/amex-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/maestro-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/amex-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/maestro-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/visa-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/visa-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/visa-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/amex-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/visa-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/amex-logos.png" height="100" width="250" alt="">
+            </div>
+        </div>
+    </div>
+    <h2>Mas recientes</h2>
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <a href="https://elearning.utng.edu.mx/">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81NzWUeTr4L.jpg" height="100" width="250" alt="">
+                </a>
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/visa-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/maestro-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/maestro-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/amex-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/maestro-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/amex-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/maestro-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/visa-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/visa-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/visa-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/amex-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/visa-logos.png" height="100" width="250" alt="">
+            </div>
+            <div class="slide">
+                <img src="http://jean.4boot.com.ve/pruebas/2/images/amex-logos.png" height="100" width="250" alt="">
+            </div>
+        </div>
+    </div>
+    <h2>Categorias principales</h2>
+    <h4>
+        Aventura Romance CienciaFiccion Fantasia Misterio Terror
+    </h4>
+    <nz-collapse>
+      <nz-collapse-panel
+        *ngFor="let panel of panels"
+        [nzHeader]="panel.name"
+        [nzActive]="panel.active"
+        [nzDisabled]="panel.disabled"
+      >
+        <p style="margin:0;">
+            <a href="https://elearning.utng.edu.mx/">Plataforma</a>
+        </p>
+      </nz-collapse-panel>
+    </nz-collapse>
+    </body>
+    </html>

@@ -1,0 +1,14 @@
+    <div id="Head">
+        <h3 id="Logo"><a routerLink="./inicio" routerLinkActive="active">CRAZY READER</a></h3>&nbsp;
+            <a class="menit" routerLink="./pantLibros" routerLinkActive="active">Libros</a>
+            <a class="menit">Manga</a>
+            <a class="menit">Comics</a>
+          <ng-template #contentTemplate>
+            <a (click)="clickMe()">Close</a>
+          </ng-template>
+            <input id="Buscador" type="search" name="busqueda" placeholder="Busqueda...">
+            <input id="BotBus" type="submit" value=" Buscar ">
+            <button id="User" nz-button nzType="primary" nz-popover nzPopoverTitle="Title" nzPopoverVisible="visible" (nzPopoverVisibleChange)="change($event)" nzPopoverTrigger="click" [nzPopoverContent]="contentTemplate">
+              Usuario
+            </button>
+    </div>

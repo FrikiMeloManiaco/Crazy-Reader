@@ -1,0 +1,23 @@
+img{
+    width: 282px;
+    height: 450px;
+    float: left;
+}
+hr{
+    color: #fdd835;
+    height: 3px;
+    background-color: #fdd835;
+}
+h2{
+    color: #fdd835;
+}
+.LMCDat{
+    float: inherit;
+    margin-block-end: 235px;
+    width: 60%;
+    border: #fdd835;
+    border-width: 2px;
+}
+.coment{
+    float: inherit;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="LMCDat">
+        <img src="https://edit.org/images/cat/portadas-libros-big-2019101610.jpg" alt="portada">
+        <h2>Nombre del Manga/libro/comic</h2>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati laboriosam iste molestiae 
+        architecto qui enim, hic minima odio tempora maxime magnam. Fugiat ab amet libero debitis laudantium enim voluptate facilis!
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur molestiae et numquam quia consequatur 
+        deleniti tempora delectus veniam architecto sint ex explicabo, sapiente, sunt cupiditate unde a harum corporis quaerat?</p>
+        <script src="https://code.angularjs.org/1.6.9/angular.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+        <h3>Autor: jefferson Gutierritos</h3>
+
+        <h3>Fecha de Publicacion: dd/mm/aa</h3>
+
+        <button ng-click="count = count + 1" ng-init="count=0">
+            Like
+        </button>
+        <div> Likes: {{count}} </div>
+
+    </div>
+
+    <hr>
+
+        <div class="coment">
+            <h2>Opiniones</h2>
+            <nz-list *ngIf="data.length" [nzDataSource]="data" [nzRenderItem]="item" [nzItemLayout]="'horizontal'">
+                <ng-template #item let-item>
+                  <nz-comment [nzAuthor]="item.author" [nzDatetime]="item.displayTime">
+                    <nz-avatar nz-comment-avatar nzIcon="user" [nzSrc]="item.avatar"></nz-avatar>
+                    <nz-comment-content>
+                      <p>{{ item.content }}</p>
+                    </nz-comment-content>
+                  </nz-comment>
+                </ng-template>
+              </nz-list>
+              <nz-comment>
+                <nz-avatar nz-comment-avatar nzIcon="user" [nzSrc]="user.avatar"></nz-avatar>
+                <nz-comment-content>
+                  <nz-form-item>
+                    <textarea [(ngModel)]="inputValue" nz-input rows="1"></textarea>
+                  </nz-form-item>
+                  <nz-form-item>
+                    <button nz-button nzType="primary" [nzLoading]="submitting" [disabled]="!inputValue" (click)="handleSubmit()">
+                      Add Comment
+                    </button>
+                  </nz-form-item>
+                </nz-comment-content>
+              </nz-comment>
+        </div>
+
+</body>
+</html>
